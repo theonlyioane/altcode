@@ -46,6 +46,19 @@ body{
 
 .alt--box:hover{
     box-shadow: 0 10px 24px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+.alt--hover{
+    position: relative;
+    height:100%;
+    text-align: center;
+    line-height: 180px;
+    overflow:auto;
+}
+
+.alt--hover:hover{
+    display:inline-block;
 }
 
 .alt--copy{
