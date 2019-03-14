@@ -37,7 +37,7 @@ body {
 }
 
 .title h2 {
-    font-size: 32px;
+    font-size: 36px;
     padding: 40px 0px 0px 0px;
     font-weight: bold;
     color: #484848;
@@ -47,6 +47,11 @@ body {
     font-size: 14px;
     opacity: .6;
     padding-bottom: 20px;
+}
+
+.line{
+    border-bottom:1px solid #e3e3e3;
+    margin-top:30px;
 }
 
 .alt--box {
@@ -254,10 +259,8 @@ body {
 
 .top {
     padding: 16px 24px;
-    border: 1px solid #f9f9f9;
     border-radius: 4px;
-    background: #000;
-    ;
+    background-image: linear-gradient(90deg, #3023AE 0%, #C86DD7 100%);
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -354,4 +357,8 @@ body {
         bottom: 0;
         opacity: 0;
     }
+}
+
+#disqus_thread{
+    margin-top:60px;
 }
