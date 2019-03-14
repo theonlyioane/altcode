@@ -10,8 +10,8 @@ body {
 
 .hero {
     width: 100%;
-    height: 320px;
     background-image: linear-gradient(90deg, #3023AE 0%, #C86DD7 100%);
+    padding-bottom: 60px;
 }
 
 .hero--nav {
@@ -28,7 +28,7 @@ body {
 .hero--text h1 {
     color: #fff;
     font-size: 64px;
-    margin-top: 60px;
+    margin-top: 50px;
     text-shadow: 0 1px 1px #281689;
 }
 
@@ -121,12 +121,20 @@ body {
         font-size: 56px;
     }
 
+    .hero {
+        padding-bottom: 60px;
+    }
+
     .box-holder {
         grid-template-columns: 1fr 1fr;
     }
 
     .alt--box {
         margin-bottom: 10px;
+    }
+
+    .seperator-wrapper {
+        display: none;
     }
 }
 
