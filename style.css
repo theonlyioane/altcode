@@ -1,120 +1,140 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     background: #f9f9f9;
 }
-.hero{
-    width:100%;
-    height:420px;
+
+.hero {
+    width: 100%;
+    height: 320px;
     background-image: linear-gradient(90deg, #3023AE 0%, #C86DD7 100%);
 }
 
-.hero--nav{
-    padding:25px 0px 20px 0px;
-    border-bottom:1px solid rgba(255, 255, 255, .25);
+.hero--nav {
+    padding: 25px 0px 20px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
 }
-.hero--wrapper{
-    max-width:1400px;
-    margin:0 auto;
+
+.hero--wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 0px 20px;
 }
 
-.hero--text h1{
-    color:#fff;
-    font-size:64px;
-    margin-top:80px;
+.hero--text h1 {
+    color: #fff;
+    font-size: 64px;
+    margin-top: 60px;
     text-shadow: 0 1px 1px #281689;
 }
 
-.hero--text p{
-    color:#fff;
+.hero--text p {
+    color: #fff;
 }
 
-.alt--box{
-    width:160px;
-    height:183px;
-    background:#fff; 
-    border-radius:8px;
+.title h2 {
+    font-size: 32px;
+    padding: 40px 0px 0px 0px;
+    font-weight: bold;
+    color: #484848;
+}
+
+.title p {
+    font-size: 14px;
+    opacity: .6;
+    padding-bottom: 20px;
+}
+
+.alt--box {
+    width: 160px;
+    height: 183px;
+    background: #fff;
+    border-radius: 8px;
     display: inline-block;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    margin-bottom:30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    margin-bottom: 30px;
 }
 
-.alt--box:hover{
-    box-shadow: 0 10px 24px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+.alt--box:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     cursor: pointer;
 }
 
-.alt--copy{
-    height:72px;
-    width:72px;
+.alt--copy {
+    height: 72px;
+    width: 72px;
     /*border: 1px solid #E3E3E3;*/
-    margin:0 auto;
-    border-radius:4px;
+    margin: 0 auto;
+    border-radius: 4px;
     font-size: 54px;
     text-align: center;
-    color:#484848;
-    margin-top:30px;
+    color: #484848;
+    margin-top: 30px;
 }
 
-.alt--directions{
+.alt--directions {
     display: block;
-    margin-top:20px;
+    margin-top: 20px;
     text-align: center;
-    font-weight:700;
-    color:#484848;
+    font-weight: 700;
+    color: #484848;
 }
 
-.direction--alt{
-    padding:6px 12px;
-    background:#f9f9f9;
-    border-radius:4px;
-    display:inline-block;
-}
-.direction--code{
-    padding:6px 12px;
-    background:#ebebeb;
-    border-radius:4px;
-    display:inline-block;
+.direction--alt {
+    padding: 6px 12px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    display: inline-block;
 }
 
-.wrapper{
-    max-width:1400px;
-    margin:0 auto;
-    padding:0px 20px;
+.direction--code {
+    padding: 6px 12px;
+    background: #ebebeb;
+    border-radius: 4px;
+    display: inline-block;
 }
 
-.box-holder{
-    margin:0 auto;
-    margin-top:-80px;
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.box-holder {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid:10px;
+    grid: 10px;
     /*grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));*/
 }
 
 @media only screen and (max-width: 500px) {
-    .hero--text h1{
-        margin-top:40px;
+    .hero--text h1 {
+        margin-top: 30px;
         line-height: 1;
-        margin-bottom:20px;
+        margin-bottom: 20px;
+        font-size: 56px;
     }
-    .box-holder{
-        grid-template-columns: 1fr 1fr; 
+
+    .box-holder {
+        grid-template-columns: 1fr 1fr;
     }
-    .alt--box{
-        margin-bottom:10px;
+
+    .alt--box {
+        margin-bottom: 10px;
     }
 }
 
 
 .seperator-wrapper {
-  width: 100%;
+    width: 100%;
 }
+
 .seperator-wrapper .seperator {
     width: 3000px;
     height: 5px;
@@ -124,102 +144,117 @@ body{
 }
 
 @-webkit-keyframes rotate {
-  from {
-    background-position: -3000px;
-  }
-  to {
-    background-position: 0px;
-  }
-}
-@keyframes rotate {
-  from {
-    background-position: -3000px;
-  }
-  to {
-    background-position: 0px;
-  }
-}
-.gradient {
-  background: #30ff90;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #30ff90), color-stop(25%, #ed2ded), color-stop(50%, #c99826), color-stop(75%, #30ffe6), color-stop(100%, #30ff90));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
-  /* IE10+ */
-  background: linear-gradient(to right, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30ff90', endColorstr='#30ff90',GradientType=1 );
-  /* IE6-9 */
+    from {
+        background-position: -3000px;
+    }
+
+    to {
+        background-position: 0px;
+    }
 }
 
-.footer{
-    padding:30px 40px 60px 40px;
-    text-align: center;
-    background:#000;
-    color:#fff;
-    margin-top:40px;
+@keyframes rotate {
+    from {
+        background-position: -3000px;
+    }
+
+    to {
+        background-position: 0px;
+    }
 }
-.footer--wrap{
-    max-width:1400px;
+
+.gradient {
+    background: #30ff90;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #30ff90), color-stop(25%, #ed2ded), color-stop(50%, #c99826), color-stop(75%, #30ffe6), color-stop(100%, #30ff90));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#30ff90', endColorstr='#30ff90', GradientType=1);
+    /* IE6-9 */
+}
+
+.footer {
+    padding: 30px 40px 60px 40px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.footer--wrap {
+    max-width: 1400px;
     margin: 0 auto;
 }
-.footer--left{
-    width:50%;
-    float:left;
+
+.footer--left {
+    width: 50%;
+    float: left;
 }
-.footer--left img{
-    float:left;
+
+.footer--left img {
+    float: left;
 }
-.footer--right{
-    width:50%;
-    float:right;
+
+.footer--right {
+    width: 50%;
+    float: right;
 }
-.footer--right p{
-    float:right;
-    padding-top:6px;
+
+.footer--right p {
+    float: right;
+    padding-top: 6px;
 }
-.footer a{
-    color:#fff;
+
+.footer a {
+    color: #fff;
 }
 
 @media only screen and (max-width: 500px) {
-    .footer{
-        height:50px;
+    .footer {
+        height: 50px;
     }
-    .footer--left{
-        width:100%;
-        float:left;
+
+    .footer--left {
+        width: 100%;
+        float: left;
     }
-    .footer--left img{
+
+    .footer--left img {
         text-align: center;
-        float:none;
-    }
-    .footer--right{
-        width:100%;
-    }
-    .footer--right p{
-        text-align:center;
         float: none;
-        margin-top:20px;
+    }
+
+    .footer--right {
+        width: 100%;
+    }
+
+    .footer--right p {
+        text-align: center;
+        float: none;
+        margin-top: 20px;
     }
 }
 
-.top{
-    padding:16px 24px;
-    border:1px solid #f9f9f9;
-    border-radius:4px;
-    background:#000;;
-    position:fixed;
-    right:20px;
-    bottom:20px;
+.top {
+    padding: 16px 24px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    background: #000;
+    ;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
     font-weight: 700;
-    color:#fff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -227,47 +262,88 @@ body{
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
-  visibility: hidden; /* Hidden by default. Visible on click */
-  min-width: 250px; /* Set a default minimum width */
-  margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #333; /* Black background color */
-  color: #fff; /* White text color */
-  text-align: center; /* Centered text */
-  border-radius: 2px; /* Rounded borders */
-  padding: 16px; /* Padding */
-  position: fixed; /* Sit on top of the screen */
-  z-index: 1; /* Add a z-index if needed */
-  left: 50%; /* Center the snackbar */
-  bottom: 30px; /* 30px from the bottom */
-  border-radius: 8px;
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+    border-radius: 8px;
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
-  visibility: visible; /* Show the snackbar */
-  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
   However, delay the fade out process for 2.5 seconds */
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
-  to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
