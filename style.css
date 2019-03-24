@@ -6,6 +6,7 @@
 
 body {
     background: #f9f9f9;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -99,10 +100,25 @@ body {
     display: inline-block;
 }
 
-.wrapper {
+.main-wrapper {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0px 20px;
+}
+
+.sidebar-wrapper {
+    width: 15%;
+    position: fixed;
+    margin-top: 50px;
+    float: right;
+    height: 100%;
+}
+
+.content-wrapper {
+    float: left;
+    height: 100%;
+    width: 80%;
+    margin-left: 20%;
 }
 
 .box-holder {
@@ -196,6 +212,8 @@ body {
     background: #000;
     color: #fff;
     margin-top: 40px;
+    float: left;
+    width: 100%;
 }
 
 .footer--wrap {
@@ -257,7 +275,6 @@ body {
     border: 1px solid #f9f9f9;
     border-radius: 4px;
     background: #000;
-    ;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -354,4 +371,28 @@ body {
         bottom: 0;
         opacity: 0;
     }
+}
+
+/*SIDEBAR*/
+.sidebar ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar li {
+    padding: 10px 12px;
+    background: none;
+    margin-top: -1px;
+    list-style: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.sidebar li:hover {
+    background: #EBE9F7;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #3A26AF;
 }
