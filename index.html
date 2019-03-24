@@ -2,6 +2,9 @@
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +22,7 @@
     </script>
 </head>
 
-<body>
+<body>    
     <section class="seperator-wrapper">
         <div class="seperator gradient">
         </div>
@@ -40,7 +43,27 @@
     <div id="snackbar">Symbol Copied!</div>
 
     <div class="wrapper">
-        <div class="title">
+        <div class="dropdown mobile">
+          <button onclick="clickFunction()" class="dropbtn">Select a Section <i class="fas fa-sort-down"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#Punctuation">Punctuation</a>
+            <a href="#Currency">Currency</a>
+            <a href="#Math Symbols">Math Symbols</a>
+            <a href="#Greek">Greek</a>
+            <a href="#Letters">Letters</a>
+            <a href="#Shapes">Shapes</a>
+          </div>
+        </div>
+        
+        <div class="filter--group desktop">
+            <a href="#Punctuation">Punctuation</a>
+            <a href="#Currency">Currency</a>
+            <a href="#Math Symbols">Math Symbols</a>
+            <a href="#Greek">Greek</a>
+            <a href="#Letters">Letters</a>
+            <a href="#Shapes">Shapes</a>
+        </div>
+        <div class="title" id="Punctuation">
             <h2>Punctuation</h2>
             <p>These incude copyright symbols and special section marks.</p>
         </div>
@@ -152,7 +175,7 @@
     
 
     <div class="wrapper">
-        <div class="title">
+        <div class="title" id="Currency">
             <h2>Currency</h2>
             <p></p>
         </div>
@@ -221,7 +244,7 @@
     </div>
 
     <div class="wrapper">
-        <div class="title">
+        <div class="title" id="Math Symbols">
             <h2>Math Symbols</h2>
             <p></p>
         </div>
@@ -336,7 +359,7 @@
     </div>
     
     <div class="wrapper">
-        <div class="title">
+        <div class="title" id="Greek">
             <h2>Greek</h2>
             <p></p>
         </div>
@@ -423,7 +446,7 @@
     </div>
 
     <div class="wrapper">
-        <div class="title">
+        <div class="title" id="Letters">
             <h2>Letters</h2>
             <p></p>
         </div>
@@ -1348,7 +1371,7 @@
     </div>
     
     <div class="wrapper">
-        <div class="title">
+        <div class="title" id="Shapes">
             <h2>Shapes</h2>
             <p></p>
         </div>
@@ -1837,7 +1860,29 @@
             }, 1000);
         }
     </script>
+    
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function clickFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
 
-<script id="dsq-count-scr" src="//altcode-xyz.disqus.com/count.js" async></script>
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+    
+    <script id="dsq-count-scr" src="//altcode-xyz.disqus.com/count.js" async></script>
 </body>
 </html>
